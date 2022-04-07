@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Configuração de projetos</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reset.css">
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reveal.css">
+
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	  <!-- highlight Theme -->
+  	
+	  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+	
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="libs/styles/tasklist.css">
+
+
+
+  <!-- Revealjs Theme -->
+  
+  	<link rel="stylesheet" href="libs/reveal.js/4.1.3/theme/night.css" id="theme">
+  
+  
+
+
+  <!-- Revealjs Theme -->
+  
+
+ 
+</head>
+
+<body>
+  
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+    <section>
+        <section >
+            <h2>Boas vindas</h2>
+
+            </section>
+        
+            <section >
+                <h2>Muito obrigado pela presença!</h2>
+<p><img src="https://media0.giphy.com/media/Tk1RH495RjYYM/giphy.gif" alt="tks"></p>
+
+            </section>
+        
+            <section >
+                <h3>O que vamos abordar?</h3>
+<p><img src="https://gifburg.com/images/gifs/thinking/gifs/0002.gif" alt="pensando" width="70%"></p>
+
+            </section>
+        
+            <section >
+                <h3>O que vamos abordar?</h3>
+<ul>
+<li>VsCode config</li>
+<li>Commits</li>
+<li>ESLint</li>
+<li>Github Actions</li>
+<li>Docker</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>Antes de tudo, quem sou eu?</h3>
+
+            </section>
+        
+            <section >
+                <h3>Eu sou …</h3>
+<ul>
+<li>Thiago Mariotto</li>
+<li>25 Anos</li>
+<li>Ciência da computação</li>
+<li>Instrutor Backend Trybe</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>Porque esse tema é importante?</h3>
+<blockquote>
+<p>É importante termos uma base sólida e estruturada para desenvolvermos nossa aplicação, definindo as configurações iniciais, é mais fácil compartilhar o código e evitar problemas futuros.</p>
+</blockquote>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>Configurações do Visual Studio Code</h3>
+<blockquote>
+<p>Pergunta: O que vem na sua cabeça com esse título?</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Configurações do Visual Studio Code</h3>
+<blockquote>
+<p>Você sabia que é possível compartilhar suas configurações de projeto do VsCode com outras pessoas?</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Configurações do Visual Studio Code</h3>
+<blockquote>
+<p>É importante pois, caso uma pessoa venha, por exemplo, realizar um Code Review, ela trabalhe em cima das mesmas regras que você definiu.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Configurações do Visual Studio Code</h3>
+<blockquote>
+<p>Como fazemos isso?</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Configurações do Visual Studio Code</h3>
+<pre><code class="language-json">{
+	&quot;editor.formatOnPaste&quot;: true,
+	&quot;editor.formatOnSave&quot;: true,
+	&quot;editor.formatOnSaveMode&quot;: true,
+	&quot;editor.formatOnType&quot;: true,
+	&quot;editor.tabSize&quot;: 2,
+	&quot;editor.codeActionsOnSave&quot;: {
+		&quot;source.fixAll&quot;: true,
+		&quot;source.organizeImports&quot;: true
+	// ...
+	}
+
+}
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Configurações do Visual Studio Code</h3>
+<ul>
+<li>dessa forma podemos compartilhar nossas configurações de ambiente de projeto com outras pessoas.</li>
+<li>o arquivo sobrepõe suas configurações locais.</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>Commits</h3>
+<p><img src="https://media0.giphy.com/media/487L0pNZKONFN01oHO/giphy.gif" alt="" width="40%"></p>
+
+            </section>
+        
+            <section >
+                <h2>Padronização de commits</h2>
+<ul>
+<li>Commitlint</li>
+<li>Husky</li>
+<li>Commitizen</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>Commits Atômicos</h3>
+
+            </section>
+        
+            <section >
+                <h3>Commits Atômicos</h3>
+<ul>
+<li>Submeta pequenas alterações que foram realizadas em seu código.</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>Commits Atômicos</h3>
+<ul>
+<li>Seus commits devem contar uma história, a história de desenvolvimento do seu projeto;</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>Commits Atômicos</h3>
+<ul>
+<li>Nada de commit bomba.</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>Conventional Commits</h3>
+<p><a href="https://www.conventionalcommits.org/en/v1.0.0/">Documentação</a></p>
+<blockquote>
+<p>Ele fornece um conjunto fácil de regras para criar um histórico de commit explícito descrevendo os recursos, correções e alterações feitas nas mensagens de commit.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Conventional Commits</h3>
+<pre><code class="language-sh">$ git commit -m &quot;feat: insert validation user register&quot;
+
+$ git commit -m &quot;fix: remove typo user validation register&quot;
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Commitlint</h3>
+<p><a href="https://commitlint.js.org/#/guides-local-setup">Documentação</a></p>
+<blockquote>
+<p>Podemos Definir que utilizaremos o Conventional Commits, mas nada garante que vamos respeitar ou lembrar as regras em todos os commits.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Commitlint</h3>
+<blockquote>
+<p>Com ele conseguimos verificar se a mensagem de commit está dentro dos padrões definidos (Linter dos commits).</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h2>Commitizen</h2>
+<p><a href="http://commitizen.github.io/cz-cli/">Documentação</a></p>
+<blockquote>
+<p>O Commitizen é uma biblioteca que vai nos ajudar a criar os commits seguindo o padrão do Conventional Commit. Ela gera uma interface no terminal e assim vamos conseguir acessar todos os tipos de commits e suas descrições.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Husky</h3>
+<p><a href="https://typicode.github.io/husky/#/">Documentação</a></p>
+<blockquote>
+<p>É possível criar gatilhos em determinadas ações, utilizaremos o Husky para disparar uma ação antes de um commit para executar o commitizen e verificar se a mensagem do commit está seguindo o padrão definido.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Colocando tudo isso em prática</h3>
+<p><img src="https://i.pinimg.com/originals/2a/69/13/2a6913ecabc0b8449c741a6686cae8fa.gif" alt=""></p>
+
+            </section>
+        
+            <section >
+                <h3>Iniciando Commitlint</h3>
+<pre><code class="language-sh">$ npm init -y
+$ git init
+
+# install commit lint
+$ npm install --save-dev @commitlint/cli
+$ npm install --save-dev @commitlint/config-conventional
+
+# atomic commit
+$ git add package.json
+$ git commit -m &quot;feat: add commit lint lib&quot;
+
+# Configure commitlint to use conventional config
+$ echo &quot;module.exports = { extends: ['@commitlint/config-conventional'] };&quot; &gt; commitlint.config.js
+
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Testando commitlint</h3>
+<pre><code class="language-sh"># Para testar a biblioteca
+echo &quot;teste&quot; | npx commitlint # deve apontar um erro
+
+echo &quot;feat: teste&quot; | npx commitlint # deve funcionar corretamente
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Iniciando Husky</h3>
+<pre><code class="language-sh"># instalando a lib
+$ npm install husky -D
+
+# atomic commit
+$ git add package.json
+$ git commit -m &quot;feat: add husky lib&quot;
+
+# ativando os hooks (gatilhos)
+$ npx husky install
+
+# Add hook que vai disparar o commitlint
+$ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit $1'
+
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Iniciando Husky</h3>
+<pre><code class="language-json">// para ativar os hooks automaticamente após instalação
+&quot;scripts&quot;: {
+  &quot;prepare&quot;: &quot;husky install&quot;
+}
+
+// caso o script não seja adicionado ao package.json, toda vez 
+// que um clone for realizado é necessário realizar 
+// `$ npx husky install`
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Realizando um commit</h3>
+<pre><code class="language-sh">$ echo &quot;node_modules/&quot; &gt; .gitignore
+
+$ git status
+$ git add .gitignore
+$ git commit -m &quot;qualquer coisa&quot;
+$ git commit -m &quot;chore: add gitignore&quot;
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Adicionando o Commitizen</h3>
+<pre><code class="language-sh">$ npm i commitizen -D
+$ npx commitizen init cz-conventional-changelog --save-dev --save-exact
+
+$ echo &quot;console.log(1);&quot; &gt; index.js
+$ git add index.js
+
+&quot;scripts&quot;: {
+    &quot;commit&quot;: &quot;cz&quot;
+  }
+
+$ npm run commit
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Utilizando o Commitizen</h3>
+<ol>
+<li>Selecione o tipo de mudança que você está realizando</li>
+<li>Qual é o escopo desta mudança (por exemplo, componente ou nome do arquivo)</li>
+<li>Escreva uma descrição breve e imperativa da mudança (máx. 82 caracteres):</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <h3>Utilizando o Commitizen</h3>
+<ol start="4">
+<li>Forneça uma descrição mais longa da mudança:</li>
+<li>Existem alterações importantes (importante saber sobre <code>Semantic Versioning</code>)</li>
+<li>Essa mudança afeta algum problema em aberto? (Issues)</li>
+</ol>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h2>ESLint</h2>
+<p><img src="https://c.tenor.com/dNAEMPMv2YMAAAAC/ei-nerd-nao-errado.gif" alt=""></p>
+
+            </section>
+        
+            <section >
+                <h2>O que é o ESLint?</h2>
+<blockquote>
+<p>Analisa seu código estaticamente para encontrar problemas. Você pode executar o ESLint como parte de seu pipeline de integração contínua (CI). Os problemas encontrados pelo ESLint podem ser corrigidos automaticamente.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Iniciando ESLint Backend</h3>
+<pre><code class="language-sh">$ mkdir backend &amp;&amp; cd backend
+$ mv ../index.js backend
+
+$ npm init -y
+$ npm install eslint -D
+$ npx eslint --init
+
+$ git add [...]
+$ npm run commit
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Executando eslint</h3>
+<pre><code class="language-json">&quot;lint&quot;: &quot;eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json .&quot;
+
+$ npm run lint
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Github Actions</h3>
+<p><a href="https://github.com/features/actions">Documentação</a></p>
+<p><img src="https://media.giphy.com/media/XCxcmEQWxDdc8qsd2R/giphy.gif" alt=""></p>
+
+            </section>
+        
+            <section >
+                <h3>Github Actions</h3>
+<blockquote>
+<p>O GitHub Actions facilita a automatização de todos os seus fluxos de trabalho de software. Crie, teste e implante seu código diretamente do GitHub.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Github Actions - Continuous Integration</h3>
+<ul>
+<li>Uma CI é realizada com sucesso quando novas mudanças no código são desenvolvidas, testadas e consolidadas em um repositório, por exemplo, a correção de um bug ou o deploy de uma feature nova.</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>Github Action + ESLint</h3>
+<blockquote>
+<p>Vamos criar uma Action para que, todas as vezes que um PR for aberto ou um push for realizado, o ESLint execute todos os testes em nosso código.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Por onde começamos?</h3>
+<p><img src="https://c.tenor.com/ydJSf1AnEJMAAAAC/where-looking-for.gif" alt=""></p>
+
+            </section>
+        
+            <section >
+                <h3>Configurando minhas Actions</h3>
+
+            </section>
+        
+            <section >
+                <h3>Configurando minhas Actions</h3>
+<pre><code class="language-sh"># vamos voltar para a raiz do projeto ./
+$ mkdir .github/workflows/main.yml
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Configurando minhas Actions</h3>
+<pre><code class="language-yml">on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install back-end modules
+        run: npm i --prefix backend    
+
+      - name: Run linter on back-end
+        run: npm run lint --prefix backend
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Testando uma action</h3>
+<blockquote>
+<p>Para isso é necessário realizar um Pull Request em um repositório.</p>
+</blockquote>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>Docker</h3>
+<p><img src="https://miro.medium.com/max/1400/0*bRvhcFgijNKRVD9L.gif" alt="" width="70%"></p>
+
+            </section>
+        
+            <section >
+                <h3>Docker</h3>
+<blockquote>
+<p>Não basta só compartilharmos nossas configurações de trabalho.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Docker</h3>
+<blockquote>
+<p>Podemos compartilhar nosso código pronto para ser executado, testado ou modificado, mas como?</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>“Dockerizando” sua aplicação</h3>
+<p><img src="https://i.pinimg.com/originals/92/33/40/923340f1c1385970b953ad2a88be83fb.gif" alt=""></p>
+
+            </section>
+        
+            <section >
+                <h2>Dockerizando sua aplicação</h2>
+<blockquote>
+<p>Fornecendo toda a estrutura base do projeto para que qualquer pessoa consiga executa-lo em sua máquina, continuando o desenvolvimento ou realizando testes.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Case</h3>
+<blockquote>
+<p>Pense o seguinte caso: você está participando de um processo seletivo em que precisa construir uma aplicação simulando uma loja de vendas de sapatos.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Case</h3>
+<blockquote>
+<p>É bem provável que você irá desenvolver um CRUD de vendas e ou estoque.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Case</h3>
+<blockquote>
+<p>Para desenvolver, você seleciona 3 ferramentas: Node, React e MySQL.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Case</h3>
+<blockquote>
+<p>Após finalizado, como ficaria sua aplicação para ser enviada a pessoa avaliadora? Conte-me …</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Case</h3>
+<blockquote>
+<p>Agora, imagine que: a pessoa que irá testar sua aplicação trabalha com Python, não possuí node e nem MySQL instalado na máquina :/</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <blockquote>
+<p>Ela vai ter um trabalhão não é mesmo?</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h2>Mão <s>na massa</s> no teclado</h2>
+<p><img src="https://i.pinimg.com/originals/9d/f1/38/9df13818441fc507a42a5e50c082f062.gif" alt=""></p>
+
+            </section>
+        
+            <section >
+                <h3>Utilizando Docker</h3>
+<blockquote>
+<p>Vamos trabalhar com um exemplo parecido</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Utilizando Docker</h3>
+<blockquote>
+<p>Vamos imaginar que estamos desenvolvendo uma aplicação completa (front e back), utilizando as seguintes ferramentas:</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h3>Nossas ferramentas</h3>
+<ul>
+<li>API com Node rodando na versão 12.22;</li>
+<li>Aplicação WEB com REACT e node na versão 12.22;</li>
+<li>Banco de dados MySQL na versão 5.7;</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3>Colocando em prática</h3>
+<ol>
+<li>Criar o Dockerfile do Backend</li>
+<li>Criar o Dockerfile do Frontend</li>
+<li>Criar o Docker Compose
+<ol>
+<li>Serviço do Back utilizando o Dockerfile</li>
+<li>Serviço do Front utilizando o Dockerfile</li>
+<li>Serviço MySQL sendo populado com um banco de dados</li>
+</ol>
+</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <h3>Colocando em prática</h3>
+<blockquote>
+<p>Ponto de atenção: o container do Frontend é dependente do container do Backend e o Backend por sua vez é dependente do MySQL.</p>
+</blockquote>
+
+            </section>
+        
+            <section >
+                <h2>Let’s Code</h2>
+
+            </section>
+        
+            <section >
+                <h3>Dockerfile Frontend</h3>
+<pre><code class="language-yml">FROM node:12.22-alpine
+
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+RUN chmod 777 node_modules
+
+COPY . .
+
+EXPOSE 3000
+
+CMD [&quot;npm&quot;, &quot;start&quot;]
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Dockerfile Backend</h3>
+<pre><code class="language-yml">FROM node:12.22-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+RUN chmod 777 node_modules
+
+COPY . .
+
+EXPOSE 3333
+
+CMD [&quot;npm&quot;, &quot;start&quot;]
+</code></pre>
+
+            </section>
+        
+            <section >
+                <h3>Docker compose</h3>
+<pre><code class="language-yml">version: '3.1'
+
+services:
+  database:
+    image: mysql:5.7
+    restart: always
+    container_name: mysql_compose
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=docker
+    volumes:
+      - ./backend/database/mysql-seeder:/docker-entrypoint-initdb.d
+
+  api:
+    build: ./backend
+    container_name: backend_compose
+    ports:
+      - 3333:3333
+    depends_on:
+      - database
+    volumes:
+      - /app/node_modules
+      - ./backend:/app
+
+  web:
+    build: ./frontend
+    container_name: frontend_compose
+    ports:
+      - 3000:3000
+    volumes:
+      - /app/node_modules
+      - ./frontend:/app
+    depends_on:
+      - api
+</code></pre>
+
+            </section>
+        
+            <section >
+                <blockquote>
+<p>Agora nossa pessoa avaliadora poderá testar nosso código executando somente um comando.</p>
+</blockquote>
+<hr>
+
+            </section>
+        
+
+    </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  	
+	<script src="libs/reveal.js/4.1.3/reveal.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
+	
+	<script src="libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
+	
+	<script src="libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script>
+	  <script src="libs/reveal.js/4.1.3/plugin/anything/Chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/d3.v3.min.js"></script>				
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3.patch.js"></script>			
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/queue.v1.min.js"></script>		
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/topojson.v1.min.js"></script>		
+	<script src="libs/reveal.js/4.1.3/plugin/anything/function-plot.js"></script>
+
+ <!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+
+	<script src="libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
+
+  <script>
+
+		const printPlugins = [
+			RevealNotes, 
+			RevealHighlight,
+			RevealMath,
+			RevealAnimate,
+			
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		
+				RevealMarkdown, 
+				
+				RevealFullscreen,
+				RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				
+				// poll
+				// question
+				// seminar
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			controlsLayout: 'bottom-right',
+			controlsBackArrows: 'faded',
+			progress: true,
+			slideNumber: false,
+			//#showSlideNumber "all" "print" "speaker"
+			hash: true,//#  hash: false,
+			//# respondToHashChanges: true,
+			//# history: false,
+			keyboard: true,
+			//#keyboardCondition: null,
+			overview: true,
+			center: true,
+			touch: true,
+			loop: false,
+			rtl: false,
+			//#navigationMode: 'default', linear grid
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: false,
+			embedded: false,
+			help: true,
+			//#pause: true
+			showNotes: false,
+			autoPlayMedia: false, // TODO fix this to a nullable value
+			//#preloadIframes: null. true false
+			//#autoAnimate: true
+			//#autoAnimateMatcher: null,
+			//#autoAnimateEasing: 'ease',
+			//autoAnimateDuration: 1.0,
+			//#autoAnimateUnmatched: true
+			//#autoAnimateStyles: []
+			autoSlide: 0, // TODO fix this to a falseable value
+			autoSlideStoppable: true,
+			autoSlideMethod: '0',
+			defaultTiming: 120,
+			mouseWheel: false,
+			//#previewLinks: false
+			//#postMessage: true,  // TODO : this can cause issues with the vscode api ???
+			//#postMessageEvents: false,
+			//#focusBodyOnPageVisibilityChange: true,
+			transition: 'slide',
+			transitionSpeed: 'default',
+			backgroundTransition: 'fade',
+			//#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+			//#pdfSeparateFragments: true,
+			//#pdfPageHeightOffset: -1,
+			viewDistance: 3,
+			//#mobileViewDistance: 2,
+			display: 'block',
+			//#hideInactiveCursor: true,
+			//#hideCursorTime: 5000
+
+			// Parallax Background
+			parallaxBackgroundImage: '',
+			parallaxBackgroundSize: '',
+			parallaxBackgroundHorizontal: 0,
+			parallaxBackgroundVertical: 0,
+			
+			//Presentation Size
+			width: 960,
+			height: 700,
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2,
+			disableLayout: false,
+
+			audio: {
+				prefix: 'audio/', 	// audio files are stored in the "audio" folder
+				suffix: '.ogg',		// audio files have the ".ogg" ending
+				textToSpeechURL: null,  // the URL to the text to speech converter
+				defaultNotes: false, 	// use slide notes as default for the text to speech converter
+				defaultText: false, 	// use slide text as default for the text to speech converter
+				advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+				autoplay: false,	// automatically start slideshow
+				defaultDuration: 5,	// default duration in seconds if no audio is available
+				defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+				playerOpacity: 0.05,	// opacity value of audio player if unfocused
+				playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+				startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+			},
+			
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				anything: [ 
+				{
+		className: "plot",
+		defaults: {width:500, height: 500, grid:true},
+		initialize: (function(container, options){ options.target = "#"+container.id; functionPlot(options) })
+	 },
+	 {
+		className: "chart",  
+		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
+	 },
+	 {
+		className: "anything",
+		initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container)} })
+	 },
+					],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+		
+
+	</script>
+
+</body>
+
+</html>
