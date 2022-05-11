@@ -3,7 +3,7 @@ const cors = require('cors');
 const connection = require('./database/connection');
 
 const app = express();
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 3333
 
 app.use(cors());
 app.get('/', async (_req, res) => {

@@ -35,19 +35,6 @@ progressBar: true
 
 ---
 
-### Antes de tudo, quem sou eu?
-
---
-
-### Eu sou ...
-
-- Thiago Mariotto
-- 25 Anos
-- Ciência da computação
-- Instrutor Backend Trybe
-
----
-
 ### Porque esse tema é importante?
 
 > É importante termos uma base sólida e estruturada para desenvolvermos nossa aplicação, definindo as configurações iniciais, é mais fácil compartilhar o código e evitar problemas futuros.
@@ -344,7 +331,7 @@ $ npm run commit
 $ npm run lint
 ```
 
---
+---
 
 ### Github Actions
 
