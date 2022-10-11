@@ -1,12 +1,10 @@
-FROM node:12.22-alpine
+FROM node:14-alpine
 
-WORKDIR /app
+WORKDIR /app/api
 
 COPY package*.json ./
 
 RUN npm install
-
-RUN chmod 777 node_modules
 
 COPY . .
 

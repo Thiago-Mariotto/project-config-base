@@ -4,12 +4,11 @@ services:
   # containers
   database:
     image: mysql:5.7
-    restart: always
     container_name: mysql_compose
     ports:
       - 3306:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=docker
+      - MYSQL_ROOT_PASSWORD=root
     volumes:
       - ./backend/database/mysql-seeder:/docker-entrypoint-initdb.d
 
@@ -20,17 +19,11 @@ services:
       - 3333:3333
     depends_on:
       - database
-    volumes:
-      - /app/node_modules
-      - ./backend:/app
 
   web:
     build: ./frontend
     container_name: frontend_compose
     ports:
-      - 3000:3000
-    volumes:
-      - /app/node_modules
-      - ./frontend:/app
+      - 80:3000
     depends_on:
       - api
