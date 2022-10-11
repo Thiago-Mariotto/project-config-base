@@ -5,7 +5,11 @@ const connection = require('./database/connection');
 const app = express();
 const PORT = process.env.PORT || 3333;
 
-app.use(cors());
+app.use(cors({
+	origin: 'http://159.223.127.113/',
+	methods: 'GET',
+}));
+
 app.get('/', async (_req, res) => {
 	try {
 		const [instructors] = await connection.execute(
